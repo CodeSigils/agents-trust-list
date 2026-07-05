@@ -6,7 +6,7 @@ concerned with AI agent identity, trust, governance, and security.
 ## Guidelines
 
 - **One project per pull request** — makes review easier.
-- **Format:** `- [Project Name](url) — Description of what it does.`
+- **Format:** `- [Project Name](url) - Description of what it does.`
 - **Description** should be one sentence explaining what the project does
   and why it matters for agent trust/identity/governance.
 - **Open source preferred** but standards, protocols, and specifications
@@ -19,6 +19,24 @@ concerned with AI agent identity, trust, governance, and security.
   component or are an open standard.
 - **No projects without a public repository or documentation site.**
 - **Check for duplicates** before submitting.
+
+## Pre-Submission Checklist
+
+Before opening a pull request, confirm each item:
+
+- [ ] The project is relevant to agent identity, trust, governance,
+      security, permissions, attestation, or reputation
+- [ ] The repository is public, has an open-source license, and has
+      had at least one commit in the last 12 months
+- [ ] The repository has **5 or more stars** (or is a standards/spec
+      project from W3C, IETF, Linux Foundation, or similar)
+- [ ] The description is a single sentence explaining what the project
+      does — not marketing language
+- [ ] The entry is in the **correct category** (see CRITERIA.md for
+      definitions)
+- [ ] No duplicate entry exists in the list already
+- [ ] `npx awesome-lint` passes locally
+- [ ] `python3 .github/scripts/validate-repos.py` passes locally
 
 ## Quality criteria
 
@@ -45,6 +63,7 @@ Pull requests that modify `README.md` are checked by two CI jobs:
 
 **validate-repos** — checks every listed repository:
 - Exists and is not archived (hard failure — blocks merge)
+- Has an open-source license (soft flag)
 - Has ≥5 stars (soft flag; exempt for LF/standards projects)
 - Has a meaningful description (soft flag)
 - Committed within the last 12 months (soft flag)

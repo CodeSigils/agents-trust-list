@@ -6,9 +6,10 @@ Checks each GitHub repo URL in README.md for:
 - Has >= 5 stars (minimum adoption threshold, except for LF standards)
 - Has commits within the last 12 months (active)
 - Has a non-trivial description
+- Has an open-source license (soft flag)
 
-Exit code 0 = all repos pass
-Exit code 1 = one or more repos flagged (output is actionable table)
+Exit code 0 = all repos pass (soft flags only)
+Exit code 1 = one or more repos 404 or archived (must fix)
 """
 
 from __future__ import annotations
@@ -59,6 +60,7 @@ def check_repo(repo: str) -> dict[str, Any]:
         "pushed_at": "",
         "last_commit_days_ago": None,
         "archived": False,
+        "has_license": False,
         "is_lf": any(kw in repo.lower() for kw in LF_KEYWORDS),
         "errors": [],
     }
@@ -66,7 +68,7 @@ def check_repo(repo: str) -> dict[str, Any]:
     try:
         proc = subprocess.run(
             ["gh", "api", f"repos/{repo}",
-             "--jq", "{stars: .stargazers_count, desc: .description, pushed: .pushed_at, archived: .archived}"],
+             "--jq", "{stars: .stargazers_count, desc: .description, pushed: .pushed_at, archived: .archived, license: .license}"],
             capture_output=True, text=True, timeout=10,
         )
         if proc.returncode != 0:
@@ -79,6 +81,7 @@ def check_repo(repo: str) -> dict[str, Any]:
         result["description"] = (data.get("desc") or "").strip()
         result["pushed_at"] = data.get("pushed", "")
         result["archived"] = data.get("archived", False)
+        result["has_license"] = data.get("license") is not None and data["license"] is not False
 
     except Exception as e:
         result["errors"].append(f"API_ERROR: {e}")
@@ -87,6 +90,9 @@ def check_repo(repo: str) -> dict[str, Any]:
     # Checks
     if result["archived"]:
         result["errors"].append("ARCHIVED")
+
+    if not result["has_license"]:
+        result["errors"].append("NO_LICENSE")
 
     if not result["description"] or len(result["description"]) < 15:
         result["errors"].append("WEAK_DESC")
@@ -129,7 +135,7 @@ def main() -> int:
             for e in r["errors"]:
                 by_error.setdefault(e, []).append(f"{r['repo']} ({r['stars']}★)")
 
-        for err_type in ["NOT_FOUND", "ARCHIVED", "LOW_STARS", "INACTIVE", "WEAK_DESC"]:
+        for err_type in ["NOT_FOUND", "ARCHIVED", "NO_LICENSE", "LOW_STARS", "INACTIVE", "WEAK_DESC"]:
             items = by_error.get(err_type, [])
             if items:
                 print(f"  {err_type} ({len(items)}):")
