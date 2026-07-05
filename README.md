@@ -4,6 +4,12 @@
 
 *Inspired by the [ANS (Agent Name Service)](https://github.com/agentnameservice) ecosystem and Linux Foundation standards efforts.*
 
+> **What this list is not:** A catalog of commercial products, academic papers
+> without implementations, internal enterprise governance systems, or platform-
+> specific trust models from Anthropic, OpenAI, or Google. This is a public
+> open-source snapshot — the actual agent trust landscape is larger but less
+> transparent.
+
 ---
 
 ## Contents
