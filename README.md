@@ -78,7 +78,8 @@ Frameworks for governing autonomous agent behavior — policy enforcement, zero-
 - [AegisSwarm-Core](https://github.com/sunilgentyala/AegisSwarm-Core) - Zero-trust security and governance framework for autonomous multi-agent AI networks. Implements CSA Agentic Trust Framework.
 - [cullis](https://github.com/cullis-security/cullis) - Zero-trust governance for autonomous AI agents in regulated organizations. Self-hosted gateway with verified identity.
 - [Preventra](https://github.com/Preventra/preventra) - Governance, trust, and identity for the agentic economy. Public infrastructure.
-- [veldt-kya](https://github.com/veldtlabs/veldt-kya) - KYA (Know Your Agents). Open-source trust, governance, and evidentiary assurance for autonomous systems.
+- [Lelu](https://github.com/Lelu-ai/lelu) - Open-source authorization engine for AI agents. Confidence-aware gating, human-in-the-loop, and policy enforcement.
+- [veldt-kya](https://github.com/veldtlabs/veldt-kya)
 
 ---
 
@@ -121,6 +122,7 @@ Public registries, trust scoring, signed receipts, and verifiable attestation.
 - [mimir](https://github.com/enchanter-ai/mimir) - Verifiable provenance for MCP tool-call results. Signed envelopes + quality scoring.
 - [kairon-protocol](https://github.com/berkay-aktas/kairon-protocol) - Attestation protocol for AI coding agents. Turns completed tasks into verifiable receipts.
 - [agentattest](https://github.com/AuroraAeon/agentattest) - Verifiable provenance for AI coding agents. Binds agent runs, diffs, PRs, artifacts, and approvals into attestations.
+- [bootproof](https://github.com/bootproof/bootproof) - Zero-trust supervisor that boots any repository or agent artifact to a verifiable, known-good state.
 - [logpose](https://github.com/logpose-dev/logpose) - Verifiable reputation + attestation SDK for AI agents.
 
 ---
@@ -151,7 +153,8 @@ Immutable audit logs, hash-chained event records, session replay, and observabil
 - [DecisionNotary](https://github.com/AgnesDevita/DecisionNotary) - Decentralized decision-notary bridging AI observability with on-chain identity.
 - [forgesight](https://github.com/Scaffoldic/forgesight) - Vendor-neutral, OpenTelemetry-first telemetry for AI agents. Traces, cost, budgets, audit trails.
 - [SoulGuard](https://github.com/saluca-labs/soulguard) - Open trust layer for AI-agent memory. Tamper-evident memory and cryptographic agent identity.
-- [trishula-agent-telemetry](https://github.com/TrishulaSoftware/trishula-agent-telemetry) - Deterministic agent observability. Merkle-chained audit trails. Anomaly detection.
+- [vaara](https://github.com/vaaraio/vaara) - Open-source evidence layer for AI governance. Gates every agent tool call against your policies with verifiable receipts.
+- [trishula-agent-telemetry](https://github.com/TrishulaSoftware/trishula-agent-telemetry)
 
 ---
 
@@ -159,6 +162,7 @@ Immutable audit logs, hash-chained event records, session replay, and observabil
 
 Security toolkits, vulnerability scanning, skill vetting, and supply chain security.
 
+- [AI-Infra-Guard](https://github.com/Tencent/AI-Infra-Guard) - Full-stack AI Red Teaming platform. Agent Security Scan, supply chain verification, and prompt security for AI ecosystems.
 - [awesome-skills-security](https://github.com/Eyadkelleh/awesome-skills-security) - Security testing toolkit for AI agents. Curated SecLists wordlists, injection payloads, and expert agents for authorized security testing.
 - [hackagent](https://github.com/AISecurityLab/hackagent) - Open-source security toolkit to detect vulnerabilities in your AI agents.
 - [SecOpsAgentKit](https://github.com/AgentSecOps/SecOpsAgentKit) - Security operations toolkit for AI coding agents. 25+ skills for vulnerability detection, container scanning.
@@ -167,6 +171,8 @@ Security toolkits, vulnerability scanning, skill vetting, and supply chain secur
 - [ops0 CLI](https://github.com/ops0-ai/ops0-cli) - Stop AI agents from shipping insecure IaC. Cloud plan scanning and governance.
 - [agentseal](https://github.com/getagentseal/agentseal) - Security toolkit for AI agents. Scan for dangerous skills and MCP configs, monitor supply chain attacks.
 - [MindJack](https://github.com/7h30th3r0n3/MindJack) - Security toolkit that extracts agent memories and rewrites instructions. Red-teaming tool.
+- [agent-bom](https://github.com/msaad00/agent-bom) - AI supply-chain and cloud security scanner. Self-hosted control plane for agents, MCP, and packages.
+- [skillfortify](https://github.com/qualixar/skillfortify) - Security scanner for AI agent skills and plugins. Static analysis, supply chain vulnerability detection.
 - [clawguard (yourclaw)](https://github.com/yourclaw/clawguard) - Security scanning and trust registry for AI agent skills (Clawdbot, MoltBot, OpenClaw, ClawHub).
 
 ---
@@ -206,6 +212,14 @@ Officially recognized standards efforts under Linux Foundation, OASF, AAIF, AGNT
 
 Protocols for inter-agent communication, trust networks, and agent economies.
 
+- [Agent2Agent (A2A)](https://github.com/a2aproject/A2A) - Google's open protocol enabling communication and interoperability between agentic applications. 24,600+★.
+- [Agentic Commerce Protocol (ACP)](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol) - Open standard for connecting AI agents with commerce infrastructure — payments, orders, and product discovery.
+- [Python A2A](https://github.com/themanojdesai/python-a2a) - Python library for implementing Google's Agent-to-Agent (A2A) protocol.
+- [A2A .NET](https://github.com/neuroglia-io/a2a-net) - .NET implementation of the A2A protocol for secure, interoperable agent communication.
+- [A2A Rust](https://github.com/tomtom215/a2a-rust) - Type-safe, async Rust SDK for the Agent2Agent (A2A) protocol.
+- [A2A Go](https://github.com/go-a2a/a2a-go) - Go implementation of the A2A protocol for agent interoperability.
+- [EEP](https://github.com/eep-dev/EEP) - Open standard for push-based, verifiable communication between digital entities and agents.
+- [HITL Protocol](https://github.com/rotorstar/hitl-protocol) - Human-in-the-Loop Protocol for autonomous agent services. Open standard (v0.8).
 - [ClawNet](https://github.com/hkgai-official/ClawNet) - Governed multi-agent social network. Every AI agent acts under human-granted identity and scoped authorization.
 - [sati](https://github.com/cascade-protocol/sati) - Trust infrastructure for million-agent economies on Solana. Identity, reputation, validation.
 - [neus/network](https://github.com/neus/network) - Open trust network for apps, people, and AI agents.
@@ -236,6 +250,7 @@ TEE-backed attestation, confidential computing, and hardware-enforced security.
 ## Related Awesome Lists
 
 - [Awesome AI Agent Protocols](https://github.com/LineageLabs/awesome-ai-agent-protocols) - Protocols, tools, and services for the AI agent infrastructure stack.
+- [Awesome A2A Agents](https://github.com/isekOS/awesome-a2a-agents) - Curated list of tools, frameworks, and projects built on the Agent-to-Agent (A2A) protocol.
 - [Awesome Machine Economy](https://github.com/azeth-protocol/awesome-machine-economy) - The machine economy ecosystem — agent payments, commerce, and finance.
 
 ---
