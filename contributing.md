@@ -29,6 +29,33 @@ Projects should meet at least one of:
 3. Is a Linux Foundation or similarly governed open-source project
 4. Has documented real-world usage or adoption
 
+See [CRITERIA.md](CRITERIA.md) for the full inclusion requirements,
+categorization rules, and quality gates applied by CI.
+
+## CI Checks
+
+Pull requests that modify `README.md` are checked by two CI jobs:
+
+**awesome-lint** — checks list format compliance:
+- Badge presence after the main heading
+- List item format (`- [Name](url) - Description`)
+- No trailing slashes on URLs
+- No duplicate links
+- Valid table of contents
+
+**validate-repos** — checks every listed repository:
+- Exists and is not archived (hard failure — blocks merge)
+- Has ≥5 stars (soft flag; exempt for LF/standards projects)
+- Has a meaningful description (soft flag)
+- Committed within the last 12 months (soft flag)
+
+Run both locally before submitting:
+
+```bash
+npx awesome-lint
+python3 .github/scripts/validate-repos.py
+```
+
 ## Submission process
 
 1. Fork this repository
