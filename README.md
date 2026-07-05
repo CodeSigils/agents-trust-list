@@ -52,7 +52,6 @@ Cryptographic identity for agents — DIDs, Ed25519, zero-trust frameworks.
 - [ASI](https://github.com/hazennik/asi) - Minimal cryptographic identity standard for agent skill ecosystems. Ed25519 + DID:key + JCS bundling.
 - [agent-auth](https://github.com/kanoniv/agent-auth) - Cryptographic identity and delegation for AI agents.
 - [Ratify Protocol](https://github.com/identities-ai/ratify-protocol) - Open cryptographic trust protocol for AI agent authorization. Hybrid Ed25519 + ML-DSA-65 (FIPS 204).
-- [SoulGuard](https://github.com/saluca-labs/soulguard) - Open trust layer for AI-agent memory and identity. Tamper-evident memory, cryptographic agent identity (SoulKeys).
 - [HelixID](https://github.com/dgverse-labs/helixid) - Open-source identity and authorization layer for AI agents. Issue verifiable credentials, manage decentralized identifiers.
 - [agentdnai](https://github.com/smouj/agentdnai) - Verifiable digital identity, scoped permissions, and audit trails for AI agents.
 - [W3C Decentralized Identifiers (DIDs)](https://www.w3.org/TR/did-core/) - The foundation. Globally unique, self-sovereign identifiers controlled by the subject.
@@ -72,7 +71,6 @@ Frameworks for governing autonomous agent behavior — policy enforcement, zero-
 - [superagentX](https://github.com/superagentxai/superagentx) - Policy-driven autonomous AI agents. Unified Control Plane with centralized tools, identity, and governance.
 - [faramesh-core](https://github.com/faramesh/faramesh-core) - Governance-as-Code for AI agents. Declarative constraints with deterministic enforcement.
 - [Deterministic Agent Control Protocol](https://github.com/elliot35/deterministic-agent-control-protocol) - Governance gateway for AI agents. Bounded, auditable, session-aware control with MCP proxy.
-- [ops0 CLI](https://github.com/ops0-ai/ops0-cli) - Stop AI agents from shipping insecure IaC. Governance for cloud operations.
 - [Agentic Trust Framework](https://github.com/massivescale-ai/agentic-trust-framework) - Open specification for Zero Trust governance of autonomous AI agents. Five core elements, four maturity levels.
 - [pattern8](https://github.com/Aquifer-sea/pattern8) - AI Agent Governance Framework. Constrain how AI agents behave in your project. `pip install pattern8`.
 - [Clyro](https://github.com/getclyro/clyro) - Governance platform for AI agents. Stops failures before they happen.
@@ -111,7 +109,6 @@ Public registries, trust scoring, signed receipts, and verifiable attestation.
 
 - [AgentGuard](https://github.com/GoPlusSecurity/agentguard) - Security guard for AI agents. Blocks malicious skills, prevents data leaks, protects secrets. 24 detection rules.
 - [agentregistry](https://github.com/agentregistry-dev/agentregistry) - Centralized, trusted, curated registry for AI agent skills.
-- [agentseal](https://github.com/getagentseal/agentseal) - Security toolkit for AI agents. Scan for dangerous skills and MCP configs, monitor supply chain attacks.
 - [Attestix](https://github.com/VibeTensor/attestix) - Attestation infrastructure for AI agents. DID-based agent identity, W3C Verifiable Credentials, EU AI Act compliance.
 - [treeship](https://github.com/zerkerlabs/treeship) - Portable trust receipts for agent workflows. Signed, chained, verifiable.
 - [Open Agent Trust Registry](https://github.com/FransDevelopment/open-agent-trust-registry) - Open root-of-trust for agent identity. Public, federated registry of trusted attestation issuers.
@@ -155,6 +152,7 @@ Immutable audit logs, hash-chained event records, session replay, and observabil
 - [agent-witness](https://github.com/rioX432/agent-witness) - Session recorder and audit log for AI coding agents. Replay Claude Code sessions as TUI timeline.
 - [DecisionNotary](https://github.com/AgnesDevita/DecisionNotary) - Decentralized decision-notary bridging AI observability with on-chain identity.
 - [forgesight](https://github.com/Scaffoldic/forgesight) - Vendor-neutral, OpenTelemetry-first telemetry for AI agents. Traces, cost, budgets, audit trails.
+- [SoulGuard](https://github.com/saluca-labs/soulguard) - Open trust layer for AI-agent memory. Tamper-evident memory and cryptographic agent identity.
 - [trishula-agent-telemetry](https://github.com/TrishulaSoftware/trishula-agent-telemetry) - Deterministic agent observability. Merkle-chained audit trails. Anomaly detection.
 
 ---
@@ -168,6 +166,8 @@ Security toolkits, vulnerability scanning, skill vetting, and supply chain secur
 - [SecOpsAgentKit](https://github.com/AgentSecOps/SecOpsAgentKit) - Security operations toolkit for AI coding agents. 25+ skills for vulnerability detection, container scanning.
 - [hackmyagent](https://github.com/opena2a-org/hackmyagent) - Metasploit for AI agents. Scan, attack, and fix AI agents and MCP servers.
 - [ClawGuard](https://github.com/NY1024/ClawGuard) - Comprehensive security toolkit for autonomous agents (OpenClaw, Claude Code, Cursor).
+- [ops0 CLI](https://github.com/ops0-ai/ops0-cli) - Stop AI agents from shipping insecure IaC. Cloud plan scanning and governance.
+- [agentseal](https://github.com/getagentseal/agentseal) - Security toolkit for AI agents. Scan for dangerous skills and MCP configs, monitor supply chain attacks.
 - [MindJack](https://github.com/7h30th3r0n3/MindJack) - Security toolkit that extracts agent memories and rewrites instructions. Red-teaming tool.
 - [clawguard (yourclaw)](https://github.com/yourclaw/clawguard) - Security scanning and trust registry for AI agent skills (Clawdbot, MoltBot, OpenClaw, ClawHub).
 
