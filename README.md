@@ -175,13 +175,20 @@ Security toolkits, vulnerability scanning, skill vetting, and supply chain secur
 
 ## Skills Curation & Trusted Marketplaces
 
-Curated registries, vetting pipelines, and quality-rated skill catalogs.
+Curated registries, security-audited marketplaces, and vetted skill catalogs for AI agents.
 
+- [PM Skills](https://github.com/phuryn/pm-skills) - Marketplace for agentic skills, commands, and plugins focused on project management and development workflows. 22,500+★.
+- [Claude Code Plugins Plus](https://github.com/jeremylongshore/claude-code-plugins-plus-skills) - Open-source marketplace. 425 plugins, 2,810 skills, 200 agents for Claude Code.
+- [Claude Code Skills](https://github.com/daymade/claude-code-skills) - Professional Claude Code skills marketplace featuring production-ready skills for enhanced development workflows.
+- [Binance Skills Hub](https://github.com/binance/binance-skills-hub) - Open skills marketplace giving AI agents native access to crypto exchange capabilities through curated, verified skills.
+- [Trail of Bits Curated Skills](https://github.com/trailofbits/skills-curated) - Curated, community-vetted Claude Code plugin marketplace from the respected security firm.
+- [AI Skill Store](https://github.com/aiskillstore/marketplace) - Security-audited skills for Claude, Codex, and Claude Code. One-click install, quality verified.
+- [Mercury Agent Skills](https://github.com/cosmicstack-labs/mercury-agent-skills) - Curated registry of reusable agent skills for Mercury Agent, OpenClaw, and Hermes Agent.
+- [Awesome Claude (HeyClaude)](https://github.com/JSONbored/awesome-claude) - Curated registry and distribution surface for Claude and AI-workflow assets: agents, skills, MCP servers.
 - [x-cmd/skill](https://github.com/x-cmd/skill) - Human-vetted, community-curated skills for AI coding and agent tools.
 - [Agent Skill Exchange](https://github.com/agentskillexchange/skills) - Curated, trusted open catalog of AI agent skills for OpenClaw, Claude Code, Codex, GitHub Copilot, Gemini, Cursor, MCP.
 - [awesome-agent-skills](https://github.com/linny006/awesome-agent-skills) - Curated, auto-updated awesome-list of vetted AI agent skills with quality ratings.
-- [openclaw-foundry](https://github.com/MARUCIE/openclaw-foundry) - Curated AI Agent skill marketplace. 37K+ vetted skills, S/A/B/C ratings.
-- [agent-toolbox](https://github.com/yunseo-kim/agent-toolbox) - Trusted, curated cross-tool registry for agent components with automated security vetting.
+- [n-skills](https://github.com/numman-ali/n-skills) - Curated plugin marketplace for AI agents, compatible with Claude Code, Codex, and OpenClaw.
 
 ---
 
