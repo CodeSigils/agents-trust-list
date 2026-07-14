@@ -10,6 +10,11 @@
 > open-source snapshot — the actual agent trust landscape is larger but less
 > transparent.
 
+> **How to use this list:** Treat inclusion as a discovery signal, not an
+> adoption recommendation or security endorsement. Before using a listed
+> approach, inspect its first-party documentation, current maintenance state,
+> license, threat model, and fit for the project's observed problem.
+
 ---
 
 ## Contents
